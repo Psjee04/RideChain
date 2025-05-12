@@ -77,23 +77,35 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 md:gap-10">
             <div className="text-center group p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md">
-                <span className="text-3xl font-bold">1</span>
-              </div>
+              <Link href="/post-ride" legacyBehavior>
+                <a className="block">
+                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md hover:bg-blue-600 transition-colors cursor-pointer">
+                    <span className="text-3xl font-bold">1</span>
+                  </div>
+                </a>
+              </Link>
               <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100">Post a Ride</h3>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">Share your route, schedule, and how many seats you have or need.</p>
             </div>
             <div className="text-center group p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md">
-                <span className="text-3xl font-bold">2</span>
-              </div>
+              <Link href="/find-ride" legacyBehavior>
+                <a className="block">
+                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md hover:bg-blue-600 transition-colors cursor-pointer">
+                    <span className="text-3xl font-bold">2</span>
+                  </div>
+                </a>
+              </Link>
               <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100">Find Rides</h3>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">Search for available rides or requests that match your criteria.</p>
             </div>
             <div className="text-center group p-8 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md">
-                <span className="text-3xl font-bold">3</span>
-              </div>
+              <Link href="/connect" legacyBehavior>
+                <a className="block">
+                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 bg-blue-500 text-white rounded-full ring-4 ring-blue-200 dark:ring-blue-500/50 shadow-md hover:bg-blue-600 transition-colors cursor-pointer">
+                    <span className="text-3xl font-bold">3</span>
+                  </div>
+                </a>
+              </Link>
               <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100">Connect</h3>
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">Use the built-in chat to coordinate and travel together safely.</p>
             </div>
@@ -125,26 +137,26 @@ export default function Home() {
             <div>
               <h4 className="text-base font-semibold mb-4 text-gray-700 dark:text-gray-200">Quick Links</h4>
               <ul className="space-y-2">
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">About Us</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">How It Works</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Safety Tips</a></Link></li>
+                <li><Link href="/about-us" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">About Us</a></Link></li>
+                <li><Link href="/how-it-works" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">How It Works</a></Link></li>
+                <li><Link href="/safety-tips" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Safety Tips</a></Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-base font-semibold mb-4 text-gray-700 dark:text-gray-200">Support</h4>
               <ul className="space-y-2">
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Help Center</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Contact Us</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">FAQs</a></Link></li>
+                <li><Link href="/help-center" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Help Center</a></Link></li>
+                <li><Link href="/contact-us" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Contact Us</a></Link></li>
+                <li><Link href="/faqs" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">FAQs</a></Link></li>
                 <li><Link href="/learn-more" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Learn More</a></Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-base font-semibold mb-4 text-gray-700 dark:text-gray-200">Legal</h4>
               <ul className="space-y-2">
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Privacy Policy</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Terms of Service</a></Link></li>
-                <li><Link href="#" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Cookie Policy</a></Link></li>
+                <li><Link href="/privacy-policy" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Privacy Policy</a></Link></li>
+                <li><Link href="/terms-of-service" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Terms of Service</a></Link></li>
+                <li><Link href="/cookie-policy" legacyBehavior><a className="text-sm text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">Cookie Policy</a></Link></li>
               </ul>
             </div>
           </div>
